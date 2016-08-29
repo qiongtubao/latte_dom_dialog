@@ -1,0 +1,27 @@
+.latte-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.ease-fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+
+.latte-backdrop.ease-fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.latte-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
